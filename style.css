@@ -1,7 +1,48 @@
+header {
+  position: fixed;
+  background-color: aquamarine;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  top: 0;
+  display: grid;
+  grid-template-areas: "h1  h1 logo"
+                       "nav nav nav";
+}
+h1 {
+  grid-area: h1;
+  background-color: bisque;
+}
 
+#header-img {
+  text-align: right;
+  grid-area: logo;
+  background-color: aliceblue;
+}
+
+#nav-bar {
+  grid-area: nav;
+  background-color: blueviolet;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+#header-img {
+  height: 75px;
+}
+
+main {
+  margin: 110px auto 0;
+  width: 95%;
+}
 
 footer {
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  background-color: aquamarine;
 }
 
 footer ul {
