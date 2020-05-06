@@ -1,3 +1,4 @@
+
 header {
   position: fixed;
   background-color: aquamarine;
@@ -7,6 +8,7 @@ header {
   display: grid;
   grid-template-areas: "h1  h1 logo"
                        "nav nav nav";
+  align-items: center;
 }
 h1 {
   grid-area: h1;
@@ -14,7 +16,8 @@ h1 {
 }
 
 #header-img {
-  text-align: right;
+  vertical-align: middle;
+  justify-self: end;
   grid-area: logo;
   background-color: aliceblue;
 }
@@ -24,13 +27,24 @@ h1 {
   background-color: blueviolet;
 }
 
-header ul {
+nav ul {
   list-style-type: none;
-  padding: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  text-align: center;
+  padding: 10px 10px;
 }
 
 #header-img {
-  height: 75px;
+  height: 65px;
 }
 
 main {
@@ -43,11 +57,12 @@ footer {
   position: fixed;
   bottom: 0;
   background-color: aquamarine;
+  width: 100%;
 }
 
 footer ul {
   list-style-type: none;
-  padding: 10px;
+  padding: 5px;
 }
 
 footer a {
