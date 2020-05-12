@@ -1,7 +1,3 @@
-body {
-  margin: auto;
-}
-
 header {
   position: fixed;
   background-color: aquamarine;
@@ -9,18 +5,18 @@ header {
   grid-template-columns: repeat(3, 1fr);
   top: 0;
   display: grid;
-  align-items: center;
   grid-template-areas: "h1  h1 logo"
                        "nav nav nav";
 }
-
 h1 {
   grid-area: h1;
+  background-color: bisque;
 }
 
 #header-img {
-  justify-self: end;
+  text-align: right;
   grid-area: logo;
+  background-color: aliceblue;
 }
 
 #nav-bar {
@@ -30,25 +26,7 @@ h1 {
 
 header ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-}
-
-header li {
-  float: left;
-}
-
-header li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-header li a:hover {
-  background-color: pink;
+  padding: 10px;
 }
 
 #header-img {
@@ -56,34 +34,8 @@ header li a:hover {
 }
 
 main {
-  position: fixed;
-  top: 150px;
+  margin: 110px auto 0;
   width: 95%;
-}
-
-#product-gallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#news {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-#form {
-  max-width: 25%;
-}
-
-#video {
-  flex-basis: content;
-  display: block;
-  margin: 0 auto;
 }
 
 footer {
@@ -91,12 +43,15 @@ footer {
   position: fixed;
   bottom: 0;
   background-color: aquamarine;
-  width: 100%;
 }
 
 footer ul {
   list-style-type: none;
   padding: 10px;
+}
+
+footer a {
+
 }
 
 #logo {
