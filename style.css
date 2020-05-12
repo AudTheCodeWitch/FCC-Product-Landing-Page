@@ -16,19 +16,17 @@ header {
 
 h1 {
   grid-area: h1;
-  background-color: bisque;
 }
 
 #header-img {
   justify-self: end;
   text-align: right;
   grid-area: logo;
-  background-color: aliceblue;
 }
 
 #nav-bar {
   grid-area: nav;
-  background-color: blueviolet;
+  background-color: blueviolet;;
 }
 
 header ul {
@@ -46,24 +44,31 @@ header li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px;
   text-decoration: none;
 }
 
 header li a:hover {
   background-color: pink;
-  padding: 10px;
 }
 
 #header-img {
   height: 75px;
 }
 
+h2 {
+  text-align: center;
+}
+
 main {
-  position: fixed;
-  top: 150px;
-  margin: 110px auto 0;
+  position: center;
+  margin: 150px auto;
   width: 95%;
+  align-items: center;
+}
+
+section {
+  padding: 10px;
 }
 
 #product-gallery {
@@ -71,7 +76,20 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-content: space-between;
+  width: 100%;
+}
+
+.product-card {
+  background-color: bisque;
+  max-width: 30%;
+  text-align: center;
+  flex: 0 0 30%;
+}
+
+.product-card img {
+  max-height: 350px;
+  width: 100%;
 }
 
 #news {
