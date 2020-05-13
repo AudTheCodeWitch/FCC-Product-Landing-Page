@@ -16,6 +16,8 @@ header {
 
 h1 {
   grid-area: h1;
+  font-family: 'Euphoria Script', cursive;
+  font-size: 40px;
 }
 
 #header-img {
@@ -58,6 +60,11 @@ header li a:hover {
 
 h2 {
   text-align: center;
+  font-family: 'Euphoria Script', cursive;
+}
+
+h3 {
+  font-family: 'Euphoria Script', cursive;
 }
 
 main {
@@ -122,10 +129,28 @@ footer ul {
   padding: 10px;
 }
 
-footer a {
-
-}
-
 #logo {
   height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  #product-gallery {
+    flex-direction: column;
+  }
+
+  .product-card {
+    background-color: bisque;
+    max-width: 100%;
+    text-align: center;
+    flex: 0 0 30%;
+    margin-bottom: 10px;
+  }
+
+  #news {
+    flex-direction: column-reverse;
+  }
+
+  #form {
+    max-width: 100%;
+  }
 }
